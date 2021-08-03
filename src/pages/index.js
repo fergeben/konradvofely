@@ -32,16 +32,16 @@ const IndexPage = () => {
 
         <section className="bg-white py-8 text-gray-800">
           <div className="container max-w-5xl mx-auto m-8">
-            <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Üdvözlöm!</h1>
+            <h1 className="w-full my-2 text-5xl leading-tight text-center text-gray-800">Üdvözlöm!</h1>
             <div className="flex flex-wrap flex-col-reverse sm:flex-row">
               <div className="mt-6 flex flex-row flex-wrap">
-                <h3 className="w-full text-3xl text-gray-800 font-bold leading-none mb-3">Feladataim</h3>
+                <h3 className="w-full text-3xl text-gray-800 leading-none mb-3">Feladataim</h3>
                 <div className="">
                   <Activities />
                 </div>
               </div>
               <div className="mt-6 flex-1">
-                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Bemutatkozó videó</h3>
+                <h3 className="text-3xl text-gray-800 leading-none mb-3">Bemutatkozó videó</h3>
                 <Video />
               </div>
             </div>

@@ -52,7 +52,7 @@ function Form() {
 export default function Contact() {
     return (
         <div>
-            <h3 className="pb-2 text-3xl text-gray-800 font-bold leading-none mb-3">Lépjen velem kapcsolatba!</h3>
+            <h3 className="pb-2 text-3xl text-gray-800 leading-none mb-3">Lépjen velem kapcsolatba!</h3>
             <Form />
         </div>
     );
