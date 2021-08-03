@@ -17,6 +17,7 @@ import ProfileImage from "./profileImage"
 import { SvgBottom, SvgTop } from "./svg";
 import Intro from "./intro";
 import Footer from "./footer";
+import { Mail, Phone, Facebook } from "react-feather";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,6 +32,20 @@ const Layout = ({ children }) => {
 
   const bgColor1 = "#a8c0ff";
   const bgColor2 = "#3f2b96";
+
+  const phone = {
+    value: "+36308161998",
+    display: "+36 30 816 1998",
+  };
+  const email = {
+    value: "info@konradvofely.hu",
+    display: "info@konradvofely.hu",
+  };
+  const facebook = {
+    value: "kovacskonradvofely",
+    display: "@kovacskonradvofely",
+  };
+
   return (
     <div
       className="leading-normal tracking-normal text-white vsc-initialized"
@@ -42,20 +57,30 @@ const Layout = ({ children }) => {
     >
       {/* <div className="bg-gradient-to-r from-blue-700 via-blue-700 to-blue-700"> */}
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-      {/* <h1>asd</h1> */}
-      <Parallax className="custom-class" y={[-40, 20]} tagOuter="figure">
-        <div className="pt-48 flex flex-wrap justify-center">
-          <h1 className="flex-1 pl-40 logo-text">Kovács<br />onrád</h1>
-          <ProfileImage />
-        </div>
-      </Parallax>
+      <div className="pt-48 ">
+        <Parallax className="custom-class" y={[-40, 20]} tagOuter="figure">
+          <div className="flex flex-wrap place-content-evenly flex-row">
+            <div className="flex flex-wrap flex-col">
+              <h1 className="logo-text">Kovács<br />onrád</h1>
+              <div className="flex-1 pt-12 text-2xl">
+                <p><a href={"mailto:" + email.value}><Mail style={{ display: "inline" }} /><span className="pl-2">{email.display}</span></a></p>
+                <p><a href={"tel:" + phone.value}><Phone style={{ display: "inline" }} /><span className="pl-2">{phone.display}</span></a></p>
+                <p><a href={"https://facebook.hu/" + facebook.value} target="_blank"><Facebook style={{ display: "inline" }} /><span className="pl-2">{facebook.display}</span></a></p>
+              </div>
+            </div>
+            <div className="">
+              <ProfileImage />
+            </div>
+          </div>
+        </Parallax>
+      </div>
 
       <div className="-mt-12 lg:-mt-24">
         <SvgBottom />
       </div>
 
       {children}
-      
+
 
       <SvgTop />
       <Footer />

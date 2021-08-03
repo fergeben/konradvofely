@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className="text-center pb-8">
             <p>
                 © {new Date().getFullYear()}
                 {` `}
