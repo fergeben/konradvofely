@@ -1,23 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
 @import "~react-image-gallery/styles/css/image-gallery.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.title-font {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+}
+
 @layer base {
   h1 {
     @apply text-6xl;
+    @apply title-font;
   }
   h2 {
     @apply text-5xl;
+    @apply title-font;
   }
   h3 {
     @apply text-4xl;
+    @apply title-font;
   }
   h4 {
     @apply text-3xl;
+    @apply title-font;
   }
   h5 {
     @apply text-2xl;
+    @apply title-font;
   }
 }
 
