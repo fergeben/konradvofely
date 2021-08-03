@@ -1,3 +1,4 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +19,13 @@
   h5 {
     @apply text-2xl;
   }
+}
+
+button.image-gallery-thumbnail {
+  width: auto;
+}
+
+img.image-gallery-thumbnail-image {
+  height: 62px;
+  width: auto !important;
 }
