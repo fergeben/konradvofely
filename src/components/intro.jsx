@@ -25,7 +25,7 @@ A menyecske tánc az utolsó feladatunk<br />
 Köszönök mindent, főleg a nagy napot<br />
 Kívánok nagyon sok boldogságot.<br />
 <br />
-Konrád vőfély</p>
+<i>Konrád vőfély</i></p>
         </div>
     );
 }

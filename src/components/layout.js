@@ -55,10 +55,8 @@ const Layout = ({ children }) => {
         background: `linear-gradient(to right, ${bgColor1}, ${bgColor2})`, /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }}
     >
-      {/* <div className="bg-gradient-to-r from-blue-700 via-blue-700 to-blue-700"> */}
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-      <div className="pt-48 ">
-        <Parallax className="custom-class" y={[-40, 20]} tagOuter="figure">
+      <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+        <div className="pt-48 ">
           <div className="flex flex-wrap place-content-evenly flex-row">
             <div className="flex flex-wrap flex-col">
               <h1 className="logo-text">Kovács<br />onrád</h1>
@@ -72,15 +70,13 @@ const Layout = ({ children }) => {
               <ProfileImage />
             </div>
           </div>
-        </Parallax>
-      </div>
-
+        </div>
+      </Parallax>
       <div className="-mt-12 lg:-mt-24">
         <SvgBottom />
       </div>
 
       {children}
-
 
       <SvgTop />
       <Footer />
