@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
@@ -11,8 +11,11 @@ import Contact from "../components/contact";
 import Gallery from "../components/gallery";
 import Video from "../components/video";
 import { CheckCircle } from "react-feather";
+import PageLoader from "../components/pageLoader";
 
 const IndexPage = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => setLoading(false), []);
   const activities = [
     "Vőfély feladatok ellátása",
     "Mulattatás",
@@ -33,7 +36,8 @@ const IndexPage = () => {
     <ParallaxProvider>
       <Layout>
         <Seo title="Főoldal" />
-        <section className="bg-white pt-40 pb-40 sm:pt-16 sm:pb-24 text-gray-800 px-2" style={{position:"relative"}}>
+        <PageLoader loading={loading} />
+        <section className="bg-white pt-40 pb-40 sm:pt-16 sm:pb-24 text-gray-800 px-2" style={{ position: "relative" }}>
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto m-8">
               <h1 className="w-full my-2 text-5xl leading-tight text-center text-gray-800 pt-16">Üdvözlöm!</h1>
