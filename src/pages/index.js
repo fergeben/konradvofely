@@ -36,7 +36,7 @@ const IndexPage = () => {
         <section className="bg-white pt-40 pb-40 sm:pt-16 sm:pb-24 text-gray-800 px-2" style={{position:"relative"}}>
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto m-8">
-              <h1 className="w-full my-2 text-5xl leading-tight text-center text-gray-800">Üdvözlöm!</h1>
+              <h1 className="w-full my-2 text-5xl leading-tight text-center text-gray-800 pt-16">Üdvözlöm!</h1>
               <div className="flex flex-wrap flex-col-reverse sm:flex-row">
                 <div className="mt-6 flex flex-row flex-wrap">
                   <h3 className="w-full text-3xl text-gray-800 leading-none mb-3">Feladataim</h3>
@@ -44,7 +44,7 @@ const IndexPage = () => {
                     <Activities />
                   </div>
                 </div>
-                <div className="mt-6 flex-1">
+                <div className="mt-6 flex-1 pb-24 sm:pt-0 sm:pb-0">
                   <h3 className="text-3xl text-gray-800 leading-none mb-3">Bemutatkozó videó</h3>
                   <Video />
                 </div>

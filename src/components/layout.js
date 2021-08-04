@@ -56,18 +56,22 @@ const Layout = ({ children }) => {
       }}
     >
       <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-        <div className="pt-48">
-          <div className="flex flex-wrap place-content-evenly flex-row">
-            <div className="flex flex-wrap flex-col">
-              <h1 className="logo-text">Kovács<br />onrád</h1>
-              <div className="flex-1 pt-12 text-2xl">
+        <div className="sm:pt-28">
+          <div className="flex flex-wrap place-content-evenly flex-row aflex-wrap-reverse">
+            <div className="w-full py-6 flex flex-nowrap justify-center sm:w-1/3 z-10">
+              <h1 className="logo-text">K<span className="logo-text-first-line">ovács</span><br />onrád</h1>
+            </div>
+            <div className="py-6 sm:py-0 sm:w-1/3 z-0">
+              <div className="py-40">
+                <ProfileImage />
+              </div>
+            </div>
+            <div className="flex flex-wrap flex-col pb-16 sm:pb-0 sm:w-1/3 z-10">
+              <div className="flex-1 pt-12 text-xl text-center">
                 <p><a href={"mailto:" + email.value}><Mail style={{ display: "inline" }} /><span className="pl-2">{email.display}</span></a></p>
                 <p><a href={"tel:" + phone.value}><Phone style={{ display: "inline" }} /><span className="pl-2">{phone.display}</span></a></p>
                 <p><a href={"https://facebook.hu/" + facebook.value} target="_blank"><Facebook style={{ display: "inline" }} /><span className="pl-2">{facebook.display}</span></a></p>
               </div>
-            </div>
-            <div className="">
-              <ProfileImage />
             </div>
           </div>
         </div>
