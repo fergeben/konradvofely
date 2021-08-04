@@ -33,7 +33,7 @@ const IndexPage = () => {
     <ParallaxProvider>
       <Layout>
         <Seo title="Főoldal" />
-        <section className="bg-white pt-40 pb-40 sm:pt-16 sm:pb-24 text-gray-800" style={{position:"relative"}}>
+        <section className="bg-white pt-40 pb-40 sm:pt-16 sm:pb-24 text-gray-800 px-2" style={{position:"relative"}}>
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto m-8">
               <h1 className="w-full my-2 text-5xl leading-tight text-center text-gray-800">Üdvözlöm!</h1>
@@ -54,20 +54,20 @@ const IndexPage = () => {
         </section>
 
         <SvgTop />
-        <section className="py-8">
+        <section className="py-8 mx-2">
           <div className="container max-w-5xl mx-auto flex flex-wrap flex-row justify-center">
             <Gallery />
           </div>
         </section>
         <SvgBottom />
 
-        <section className="py-80 sm:pt-8 sm:pb-24 bg-white text-gray-800">
+        <section className="py-80 px-2 sm:pt-8 sm:pb-24 bg-white text-gray-800">
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto flex flex-wrap flex-row content-evenly">
-              <div className="sm:w-1/2 self-center">
+              <div className="sm:w-1/2 py-8 self-center">
                 <Intro />
               </div>
-              <div className="sm:w-1/2">
+              <div className="sm:w-1/2 py-8">
                 <Contact />
               </div>
             </div>

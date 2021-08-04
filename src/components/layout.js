@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
       }}
     >
       <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-        <div className="pt-48 ">
+        <div className="pt-48">
           <div className="flex flex-wrap place-content-evenly flex-row">
             <div className="flex flex-wrap flex-col">
               <h1 className="logo-text">Kovács<br />onrád</h1>
