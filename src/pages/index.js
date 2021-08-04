@@ -13,9 +13,25 @@ import Video from "../components/video";
 import { CheckCircle } from "react-feather";
 import PageLoader from "../components/pageLoader";
 
+const pin = "484157";
+
 const IndexPage = () => {
   const [loading, setLoading] = useState(true);
-  useEffect(() => setLoading(false), []);
+  const [locked, setLocked] = useState(true);
+  useEffect(() => {
+    let _locked = true;
+    while (_locked) {
+      const val = prompt("PIN");
+      if (pin === val) {
+        alert("Feloldva!");
+        _locked = false;
+        setLocked(false);
+      } else {
+        alert("Hibás PIN!");
+      }
+    }
+    setLoading(false);
+  }, []);
   const activities = [
     "Vőfély feladatok ellátása",
     "Mulattatás",
@@ -31,6 +47,9 @@ const IndexPage = () => {
       <CheckCircle className="mr-2 my-3" style={{ display: "inline" }} />{a}
     </p>
   ));
+
+  if (locked)
+    return <div>Hozzáférés megtagadva!</div>;
 
   return (
     <ParallaxProvider>
