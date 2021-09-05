@@ -12,6 +12,8 @@ import Gallery from "../components/gallery";
 import Video from "../components/video";
 import { CheckCircle } from "react-feather";
 import PageLoader from "../components/pageLoader";
+import About from "../components/about";
+import Testimonial from "../components/testimonial";
 
 const pin = "484157";
 
@@ -89,6 +91,28 @@ const IndexPage = () => {
         <section className="py-80 px-2 sm:pt-8 sm:pb-24 bg-white text-gray-800">
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto flex flex-wrap flex-row content-evenly">
+              <div className="sm:w-1/1 py-8">
+                <div className="sm:w-1/2 py-8">
+                  <Testimonial />
+                </div>
+              </div>
+            </div>
+          </Parallax>
+        </section>
+
+        <SvgTop />
+        <section className="py-8 mx-2">
+          <div className="container max-w-5xl mx-auto flex flex-wrap flex-row justify-center">
+              <div className="sm:w-1/2 py-8">
+                <About />
+            </div>
+          </div>
+        </section>
+        <SvgBottom />
+
+        <section className="py-80 px-2 sm:pt-8 sm:pb-24 bg-white text-gray-800">
+          <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+            <div className="container max-w-5xl mx-auto flex flex-wrap flex-row justify-center">
               <div className="sm:w-1/2 py-8 self-center">
                 <Intro />
               </div>
