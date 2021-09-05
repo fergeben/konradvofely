@@ -109,7 +109,7 @@ const IndexPage = () => {
         </section>
         <SvgBottom />
 
-        <section className="px-2 sm:pb-40 bg-white text-gray-800" id="kapcsolat">
+        <section className="px-2 pb-80 bg-white text-gray-800" id="kapcsolat">
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto flex flex-wrap flex-row justify-center">
               <div className="sm:w-1/2 py-8 self-center">
