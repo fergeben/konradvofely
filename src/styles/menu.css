@@ -58,6 +58,7 @@
 /* Individual item */
 .bm-item {
     display: inline-block;
+    padding-bottom: 1em;
 }
 
 /* Styling of overlay */

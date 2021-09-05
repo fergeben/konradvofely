@@ -13,6 +13,7 @@ import PageLoader from "../components/pageLoader";
 import About from "../components/about";
 import TestimonialSection from "../components/testimonialSection";
 import NavBar from "../components/NavBar";
+import MentorsSection from "../components/mentorsSection";
 
 const pin = "484157";
 
@@ -117,6 +118,7 @@ const IndexPage = () => {
               <div className="sm:w-1/2 py-8">
                 <Contact />
               </div>
+              <MentorsSection />
             </div>
           </Parallax>
         </section>

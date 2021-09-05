@@ -10,5 +10,6 @@ export default function NavBar() {
         <a className="menu-item" href="#velemenyek">Vélemények</a>
         <a className="menu-item" href="#magamrol">Magamról</a>
         <a className="menu-item" href="#kapcsolat">Kapcsolat</a>
+        <a className="menu-item" href="#tanaraim">Tanáraim</a>
     </Menu>;
 }
