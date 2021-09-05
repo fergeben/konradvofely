@@ -17,17 +17,19 @@ const pin = "484157";
 
 const IndexPage = () => {
   const [loading, setLoading] = useState(true);
-  const [locked, setLocked] = useState(true);
+  const [locked, setLocked] = useState(false);
   useEffect(() => {
-    let _locked = true;
-    while (_locked) {
-      const val = prompt("PIN");
-      if (pin === val) {
-        alert("Feloldva!");
-        _locked = false;
-        setLocked(false);
-      } else {
-        alert("Hibás PIN!");
+    if (locked) {
+      let _locked = true;
+      while (_locked) {
+        const val = prompt("PIN");
+        if (pin === val) {
+          alert("Feloldva!");
+          _locked = false;
+          setLocked(false);
+        } else {
+          alert("Hibás PIN!");
+        }
       }
     }
     setLoading(false);

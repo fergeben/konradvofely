@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="301.69531"
+   height="418.9191"
+   id="svg25"
+   viewBox="0 0 301.69531 418.9191"
+   sodipodi:docname="kk_logo.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata31">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs29" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="993"
+     id="namedview27"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.91460905"
+     inkscape:cx="-2.7334083"
+     inkscape:cy="235.07312"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg25" />
+  <path
+     d="M -15.0845,-15.0846 H 316.7799 V 434.0038 H -15.0845 Z"
+     style="fill:#b1b3b4;fill-opacity:0;fill-rule:evenodd"
+     id="path2" />
+  <path
+     d="M 0,87.7281 150.8503,0 301.6953,87.7281 V 315.3506 L 150.8503,418.9191 0,315.3506 Z"
+     style="fill:#ffffff;fill-rule:evenodd"
+     id="path4" />
+  <g
+     id="Layer1000"
+     transform="translate(-145.9366,-43.8251)">
+    <path
+       d="M 155.3162,136.9484 296.7861,54.6753 438.2523,136.9484 V 354.237 L 296.7861,451.3664 155.3162,354.237 Z"
+       style="fill:#1b1918;fill-rule:evenodd"
+       id="path6" />
+    <path
+       d="m 208.5176,370.2044 -35.9849,-24.397 V 148.2748 l 35.9849,-21.2994 z m 72.3547,-39.0485 v 77.3849 L 210.3912,251.5053 v -1.3696 l 70.4279,-151.9608 0.0532,71.9352 -35.1252,79.567 z"
+       style="fill:#ffffff;fill-rule:evenodd"
+       id="path8" />
+    <path
+       d="m 340.175,396.4919 -35.5261,25.9899 V 86.1654 l 35.5261,22.2721 z m 81.4923,-55.2417 -29.0363,20.2783 -50.6062,-109.9872 v -1.3522 l 53.7471,-115.9686 25.8954,15.1468 -44.7374,100.3691 z"
+       style="fill:#ffffff;fill-rule:evenodd"
+       id="path10" />
+  </g>
+</svg>
