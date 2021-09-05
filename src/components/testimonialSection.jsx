@@ -70,8 +70,8 @@ export default function TestimonialSection() {
                 infiniteLoop={true}
                 showThumbs={false}
                 showStatus={false}
-                autoPlay={false}
-            // interval={6100}
+                autoPlay={true}
+                interval={6500}
             >
                 {data.map((d, i) => <Testimonial key={i} {...d} />)}
             </Carousel>
