@@ -55,6 +55,7 @@ const Layout = ({ children }) => {
         background: `-webkit-linear-gradient(to right, ${bgColor1}, ${bgColor2})`, /* Chrome 10-25, Safari 5.1-6 */
         background: `linear-gradient(to right, ${bgColor1}, ${bgColor2})`, /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }}
+      id="landing"
     >
       <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
         <div className="sm:pt-28">

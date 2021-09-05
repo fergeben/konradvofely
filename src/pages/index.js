@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 import Layout from "../components/layout"
@@ -14,6 +12,7 @@ import { CheckCircle } from "react-feather";
 import PageLoader from "../components/pageLoader";
 import About from "../components/about";
 import TestimonialSection from "../components/testimonialSection";
+import NavBar from "../components/NavBar";
 
 const pin = "484157";
 
@@ -57,10 +56,11 @@ const IndexPage = () => {
 
   return (
     <ParallaxProvider>
+      <NavBar />
       <Layout>
         <Seo title="Főoldal" />
         <PageLoader loading={loading} />
-        <section className="bg-white pt-40 pb-40 sm:pt-16 sm:pb-24 text-gray-800 px-2" style={{ position: "relative" }}>
+        <section id="feladataim" className="bg-white pt-40 pb-40 sm:pt-16 sm:pb-24 text-gray-800 px-2" style={{ position: "relative" }}>
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto m-8">
               <h1 className="w-full my-2 text-5xl leading-tight text-center text-gray-800 pt-16">Üdvözlöm!</h1>
@@ -81,14 +81,14 @@ const IndexPage = () => {
         </section>
 
         <SvgTop />
-        <section className="py-8 mx-2">
+        <section className="py-8 mx-2" id="galeria">
           <div className="container max-w-5xl mx-auto flex flex-wrap flex-row justify-center">
             <Gallery />
           </div>
         </section>
         <SvgBottom />
 
-        <section className="px-2 sm:pt-8 sm:pb-80 bg-white text-gray-800">
+        <section className="px-2 sm:pt-8 sm:pb-80 bg-white text-gray-800" id="velemenyek">
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto flex flex-wrap flex-row content-evenly">
               <div className="sm:w-1/1 py-8">
@@ -99,7 +99,7 @@ const IndexPage = () => {
         </section>
 
         <SvgTop />
-        <section className="py-8 mx-2">
+        <section className="py-8 mx-2" id="magamrol">
           <div className="container max-w-5xl mx-auto flex flex-wrap flex-row justify-center">
             <div className="sm:w-1/2 py-8">
               <About />
@@ -108,7 +108,7 @@ const IndexPage = () => {
         </section>
         <SvgBottom />
 
-        <section className="px-2 sm:pb-40 bg-white text-gray-800">
+        <section className="px-2 sm:pb-40 bg-white text-gray-800" id="kapcsolat">
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto flex flex-wrap flex-row justify-center">
               <div className="sm:w-1/2 py-8 self-center">
