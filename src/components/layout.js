@@ -18,6 +18,7 @@ import { SvgBottom, SvgTop } from "./svg";
 import Intro from "./intro";
 import Footer from "./footer";
 import { Mail, Phone, Facebook } from "react-feather";
+import Logo from "../images/kk_logo.svg";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -59,7 +60,12 @@ const Layout = ({ children }) => {
         <div className="sm:pt-28">
           <div className="flex flex-wrap place-content-evenly flex-row aflex-wrap-reverse">
             <div className="w-full py-6 flex flex-nowrap justify-center sm:w-1/3 z-10">
-              <h1 className="logo-text">K<span className="logo-text-first-line">ovács</span><br />onrád</h1>
+              <div className="logo-wrapper">
+                <img className="logo" src={Logo} />
+                <h1 className="logo-text">
+                  <p>onrád</p>
+                </h1>
+              </div>
             </div>
             <div className="py-6 sm:py-0 sm:w-1/3 z-0">
               <div className="py-40">
