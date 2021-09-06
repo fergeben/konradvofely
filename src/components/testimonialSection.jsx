@@ -4,16 +4,18 @@ import { Carousel } from "react-responsive-carousel";
 
 const data = [
     {
+        name: "Anita és Dávid",
         message: `Nem ceremóniamester, igazi vőfély. Gyerekkorunk lagzis hangulatát hozta el nekünk. Neki ez nem munka, ez hivatás. 
-        Egy mondattal tudnánk jellemezni: Tudja mi kell a népnek!
-        Anita&Dávid`,
+        Egy mondattal tudnánk jellemezni: Tudja mi kell a népnek!`,
         image: "https://my-bucket.eu-central-1.linodeobjects.com/konradvofely_hu/testimonial-1.jpg",
     },
     {
-        message: `Nagyon-nagyon jó volt minden. Mindenkitől pozitív visszajelzést kaptunk. :)`,
+        name: "Kriszti és Tibit",
+        message: `Meg szeretnénk köszönni még egyszer, hogy a nagy napunkat Te koordináltad végig. Nagyon-nagyon jó volt minden. Mindenkitől pozitív visszajelzést kaptunk. :)`,
         image: "https://my-bucket.eu-central-1.linodeobjects.com/konradvofely_hu/testimonial-2.jpg",
     },
     {
+        name: "Heni és Laci",
         message: `Tisztelettudóan és mégis csibészként állt hozzá a feladataihoz...
         Végig figyelt a lagzi hangulatára, 
         és feldobta azt párszor egy-egy verseléssel, játékkal ahol szükséges volt. 
@@ -21,6 +23,7 @@ const data = [
         image: "https://my-bucket.eu-central-1.linodeobjects.com/konradvofely_hu/testimonial-3.jpg",
     },
     {
+        name: "Dominika és Milán",
         message: `...Végig figyelmes volt, a váratlan helyzeteket is szempillantás alatt megoldotta. 
         Az egész nap folyamán kontaktban volt velünk, igyekezett mindent úgy lebonyolítani, 
         hogy minden úgy sikerüljön, ahogy azt megálmodtuk, ezáltal egy igazán emlékezetes 
@@ -30,6 +33,7 @@ const data = [
         image: "https://my-bucket.eu-central-1.linodeobjects.com/konradvofely_hu/testimonial-4.jpg",
     },
     {
+        name: "Dorina és Omar",
         message: `Konrád a vőfélyek Vőfélye! Mindent kezében tartva és mindenre , 
         mindenkire figyelve vezényelte le a lagzinkat . Nagyon hálásak vagyunk mivel neki köszönhetjük
          hogy olyan jol sikerült a lakodalom . Mindenkinek szívből ajánlom Konrádot`,
@@ -37,7 +41,7 @@ const data = [
     },
 ];
 
-const Testimonial = ({ message, image }) => (
+const Testimonial = ({ name, message, image }) => (
     <div className="">
         <div className="" style={{
             position: "relative",
@@ -55,6 +59,7 @@ const Testimonial = ({ message, image }) => (
                 transform: "translate(-5%, -75%)",
             }}>
                 <p className="sm:text-lg md:text-xl lg:text-2xl">"{message}"</p>
+                <h5 className="text-xl md:text-2xl lg:text-3xl"><strong>- {name}</strong></h5>
             </div>
         </div>
     </div>
