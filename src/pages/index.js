@@ -66,7 +66,7 @@ const IndexPage = () => {
             <div className="container max-w-5xl mx-auto m-8">
               <h1 className="w-full my-2 text-5xl leading-tight text-center text-gray-800 pt-16">Üdvözlöm!</h1>
               <div className="flex flex-wrap flex-col-reverse sm:flex-row">
-                <div className="mt-6 flex flex-row flex-wrap">
+                <div className="mt-16 sm:mt-6 flex flex-row flex-wrap">
                   <h3 className="w-full text-3xl text-gray-800 leading-none mb-3">Feladataim</h3>
                   <div className="">
                     <Activities />

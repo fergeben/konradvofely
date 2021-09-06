@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
 
   const phone = {
     value: "+36308161998",
-    display: "+36 30 816 1998",
+    display: "+36\u00A030\u00A0816\u00A01998",
   };
   const email = {
     value: "info@konradvofely.hu",
@@ -58,23 +58,19 @@ const Layout = ({ children }) => {
       id="landing"
     >
       <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-        <div className="sm:pt-28">
-          <div className="flex flex-wrap place-content-evenly flex-row aflex-wrap-reverse">
+        <div className="sm:py-14">
+          <div className="flex flex-wrap place-content-evenly flex-row aflex-wrap-reverse items-center">
             <div className="w-full py-6 flex flex-nowrap justify-center sm:w-1/3 z-10">
-              <div className="logo-wrapper">
-                <img className="logo" src={Logo} />
-                <h1 className="logo-text">
-                  <p>onrád</p>
-                </h1>
-              </div>
+              <h1 className="logo-text">K<span className="logo-text-first-line">ovács</span><br />onrád</h1>
             </div>
             <div className="py-6 sm:py-0 sm:w-1/3 z-0">
               <div className="py-40">
                 <ProfileImage />
               </div>
             </div>
-            <div className="flex flex-wrap flex-col pb-16 sm:pb-0 sm:w-1/3 z-10">
-              <div className="flex-1 pt-12 text-xl text-center">
+            <div className="flex flex-nowrap flex-col pb-16 sm:pb-0 sm:w-1/3 z-10  items-center">
+              <img className="logo" src={Logo} />
+              <div className="flex flex-col flex-1 text-xl text-center place-items-center">
                 <p><a href={"mailto:" + email.value}><Mail style={{ display: "inline" }} /><span className="pl-2">{email.display}</span></a></p>
                 <p><a href={"tel:" + phone.value}><Phone style={{ display: "inline" }} /><span className="pl-2">{phone.display}</span></a></p>
                 <p><a href={"https://facebook.hu/" + facebook.value} target="_blank"><Facebook style={{ display: "inline" }} /><span className="pl-2">{facebook.display}</span></a></p>
