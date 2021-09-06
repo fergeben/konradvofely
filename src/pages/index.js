@@ -85,10 +85,10 @@ const IndexPage = () => {
         </section>
         <SvgBottom />
 
-        <section className="px-2 py-20 sm:py-40 lg:py-56 bg-white text-gray-800" id="velemenyek">
+        <section className="px-2 py-20 sm:pb-40 md:pb-56 md:pt-0 bg-white text-gray-800" id="velemenyek">
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto flex flex-wrap flex-row content-evenly">
-              <div className="sm:w-1/1 py-8">
+              <div className="sm:w-1/1">
                 <TestimonialSection />
               </div>
             </div>
@@ -105,10 +105,10 @@ const IndexPage = () => {
         </section>
         <SvgBottom />
 
-        <section className="px-2 pt-96 pb-80 sm:py-40 bg-white text-gray-800" id="kapcsolat">
+        <section className="px-2 py-96 sm:py-40 md:pt-0 md:pb-20 lg:pt-0 lg:pb-8 bg-white text-gray-800" id="kapcsolat">
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto flex flex-wrap flex-row justify-center">
-              <div className="sm:w-1/2 py-8 self-center">
+              <div className="sm:w-1/2 self-center">
                 <Intro />
               </div>
               <div className="sm:w-1/2 py-8">

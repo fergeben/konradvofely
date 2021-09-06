@@ -17,7 +17,7 @@ const Mentor = ({ name, img, linkTo }) => (
 
 export default function MentorsSection() {
     return (
-        <div id="tanaraim" className="container max-w-5xl mx-auto pt-6 pb-80">
+        <div id="tanaraim" className="container max-w-5xl mx-auto pt-8 pb-80">
             <h2 className="pb-6">Tanáriam</h2>
             <div className="flex flex-wrap flex-row place-items-center">
                 <Mentor name="Gabi" linkTo="https://ceremoniamesterfg.hu" img="https://my-bucket.eu-central-1.linodeobjects.com/konradvofely_hu/tanaraim_gabi.jpg" />
