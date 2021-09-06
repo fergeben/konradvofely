@@ -4,7 +4,8 @@ const Mentor = ({ name, img, linkTo }) => (
     <a
         href={linkTo}
         target="_blank"
-        className="flex flex-col sm:w-1/2 place-items-center"
+        className="flex flex-col sm:w-1/2 place-items-center pointer-events-none"
+        onClick={e => e.preventDefault()}
     >
         <img src={img} alt={name} style={{
             width: "250px",
