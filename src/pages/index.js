@@ -40,10 +40,6 @@ const IndexPage = () => {
     "Vőfély feladatok ellátása",
     "Mulattatás",
     "Örök emlék",
-    "Menyasszonyi csokrok",
-    "Virág dekorációk",
-    "Autódísz",
-    "Virágos teremdíszek",
   ];
 
   const Activities = () => activities.map(a => (
