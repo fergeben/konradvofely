@@ -10,7 +10,7 @@ const data = [
         image: "https://my-bucket.eu-central-1.linodeobjects.com/konradvofely_hu/testimonial-1.jpg",
     },
     {
-        name: "Kriszti és Tibit",
+        name: "Kriszti és Tibi",
         message: `Meg szeretnénk köszönni még egyszer, hogy a nagy napunkat Te koordináltad végig. Nagyon-nagyon jó volt minden. Mindenkitől pozitív visszajelzést kaptunk. :)`,
         image: "https://my-bucket.eu-central-1.linodeobjects.com/konradvofely_hu/testimonial-2.jpg",
     },
