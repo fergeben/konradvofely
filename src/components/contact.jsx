@@ -1,14 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
 import { sendMail } from "../services/email";
+
+function useCompare(val) {
+    const prevVal = usePrevious(val)
+    return prevVal !== val
+}
+
+function usePrevious(value) {
+    const ref = useRef();
+    useEffect(() => {
+        ref.current = value;
+    });
+    return ref.current;
+}
+
 
 function Form() {
     const [givenName, setGivenName] = useState("");
     const [familyName, setFamilyName] = useState("");
     const [fullName, setFullName] = useState("");
+    const givenNameChanged = useCompare(givenName);
+    const familyNameChanged = useCompare(familyName);
     useEffect(() => {
-        setFamilyName(`${familyName} ${givenName}`);
-    }, [givenName, familyName]);
+        setFullName(`${familyName} ${givenName}`);
+    }, [givenNameChanged, familyNameChanged]);
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
@@ -16,7 +32,7 @@ function Form() {
         <form className="w-full max-w-lg">
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-family-name">
+                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-family-name">
                         Családnév
                     </label>
                     <input
@@ -31,7 +47,7 @@ function Form() {
                         <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                 </div>
                 <div className="w-full md:w-1/2 px-3">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-given-name">
+                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-given-name">
                         Keresztnév
                     </label>
                     <input
@@ -46,7 +62,7 @@ function Form() {
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
                         E-mail cím
                         </label>
                     <input
@@ -62,7 +78,7 @@ function Form() {
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
                         Üzenet
                     </label>
                     <textarea
