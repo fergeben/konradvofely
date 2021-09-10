@@ -65,6 +65,7 @@ const images = [
     "DM-332.jpg",
 ];
 
+
 export default function Gallery() {
     const items = images.map(i => ({
         original: bucketBase + "/" + i,

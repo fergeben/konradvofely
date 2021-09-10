@@ -7,6 +7,7 @@ import { SvgBottom, SvgTop } from "../components/svg";
 import Intro from "../components/intro";
 import Contact from "../components/contact";
 import Gallery from "../components/gallery";
+import VideoGallery from "../components/videoGallery";
 import Video from "../components/video";
 import { CheckCircle } from "react-feather";
 import PageLoader from "../components/pageLoader";
@@ -80,12 +81,17 @@ const IndexPage = () => {
         <SvgTop />
         <section className="py-8 mx-2" id="galeria">
           <div className="container max-w-5xl mx-auto flex flex-wrap flex-row justify-center">
+            <h2 className="pb-4">Galéria</h2>
             <Gallery />
+          </div>
+          <div className="container">
+            <h2 className="pb-4 pt-8">Videók</h2>
+            <VideoGallery />
           </div>
         </section>
         <SvgBottom />
 
-        <section className="px-2 py-20 sm:pb-40 md:pb-56 md:pt-0 bg-white text-gray-800" id="velemenyek">
+        <section className="px-2 py-20 sm:pb-40 md:pb-56 md:pt-20 bg-white text-gray-800" id="velemenyek">
           <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className="container max-w-5xl mx-auto flex flex-wrap flex-row content-evenly">
               <div className="sm:w-1/1">
