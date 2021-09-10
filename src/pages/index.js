@@ -84,7 +84,7 @@ const IndexPage = () => {
             <h2 className="pb-4">Galéria</h2>
             <Gallery />
           </div>
-          <div className="container">
+          <div className="container text-center">
             <h2 className="pb-4 pt-8">Videók</h2>
             <VideoGallery />
           </div>
